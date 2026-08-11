@@ -31,6 +31,42 @@ export default function RootLayout({ children }) {
         <Script src="/js/countries-data.js" strategy="beforeInteractive" />
       </head>
       <body suppressHydrationWarning>
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function () {
+        const base = '/visionvisa-demo';
+
+        function fixLinks() {
+          document.querySelectorAll('a[href], img[src]').forEach(function (el) {
+            const attr = el.hasAttribute('href') ? 'href' : 'src';
+            const value = el.getAttribute(attr);
+
+            if (
+              value &&
+              value.startsWith('/') &&
+              !value.startsWith('//') &&
+              !value.startsWith(base + '/')
+            ) {
+              el.setAttribute(attr, base + value);
+            }
+          });
+        }
+
+        fixLinks();
+
+        document.addEventListener('click', function () {
+          setTimeout(fixLinks, 0);
+        });
+
+        new MutationObserver(fixLinks).observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      })();
+    `,
+  }}
+/>
         <Navbar />
         {children}
         <Footer />
