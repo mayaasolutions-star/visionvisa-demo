@@ -48,22 +48,39 @@ jobs:
           root = Path("out")
           prefix = "/visionvisa-demo"
 
-          if not root.exists():
-              raise SystemExit("ERROR: out folder was not created by Next.js build.")
+          def fix_path(path):
+              if not path:
+                  return path
 
-          def fix_path(value):
-              if not value.startswith("/"):
-                  return value
+              # Already correctly prefixed
+              if path == prefix or path.startswith(prefix + "/"):
+                  return path
 
-              if value.startswith("//"):
-                  return value
+              # Absolute local path
+              if path.startswith("/"):
+                  return prefix + path
 
-              if value == prefix or value.startswith(prefix + "/"):
-                  return value
+              # Relative public assets
+              if path.startswith("images/"):
+                  return prefix + "/" + path
 
-              return prefix + value
+              if path.startswith("icons/"):
+                  return prefix + "/" + path
 
-          # Fix href/src in generated HTML
+              if path.startswith("fonts/"):
+                  return prefix + "/" + path
+
+              if path.startswith("js/"):
+                  return prefix + "/" + path
+
+              if path.startswith("css/"):
+                  return prefix + "/" + path
+
+              return path
+
+          # -----------------------------------------
+          # Fix HTML href/src attributes
+          # -----------------------------------------
           for file in root.rglob("*.html"):
               text = file.read_text(encoding="utf-8")
 
@@ -74,7 +91,7 @@ jobs:
 
                   value = fix_path(value)
 
-                  return f"{attr}={quote}{value}{quote}"
+                  return f'{attr}={quote}{value}{quote}'
 
               text = re.sub(
                   r'(href|src)=(["\'])(.*?)\2',
@@ -82,28 +99,51 @@ jobs:
                   text
               )
 
-              # Fix CSS url(...) inside HTML
+              # -----------------------------------------
+              # Fix CSS url(...)
+              # Handles both:
+              # url(/images/...)
+              # url(images/...)
+              # -----------------------------------------
+              def replace_css_url(match):
+                  quote = match.group(1) or ""
+                  path = match.group(2)
+
+                  fixed = fix_path(path)
+
+                  return f'url({quote}{fixed}{quote})'
+
               text = re.sub(
-                  r'url\((["\']?)/(?!/|visionvisa-demo/)',
-                  lambda m: f'url({m.group(1)}{prefix}/',
+                  r'url\((["\']?)(?!data:|https?:|//)([^)"\']+)\1\)',
+                  replace_css_url,
                   text
               )
 
               file.write_text(text, encoding="utf-8")
 
-          # Fix root-relative assets inside generated CSS
+          # -----------------------------------------
+          # Fix standalone CSS files
+          # -----------------------------------------
           for file in root.rglob("*.css"):
               text = file.read_text(encoding="utf-8")
 
+              def replace_css_url(match):
+                  quote = match.group(1) or ""
+                  path = match.group(2)
+
+                  fixed = fix_path(path)
+
+                  return f'url({quote}{fixed}{quote})'
+
               text = re.sub(
-                  r'url\((["\']?)/(?!/|visionvisa-demo/)',
-                  lambda m: f'url({m.group(1)}{prefix}/',
+                  r'url\((["\']?)(?!data:|https?:|//)([^)"\']+)\1\)',
+                  replace_css_url,
                   text
               )
 
               file.write_text(text, encoding="utf-8")
 
-          print("Temporary GitHub Pages path fix completed.")
+          print("GitHub Pages paths fixed successfully.")
           PY
 
       # Verify important pages actually exist before deployment
