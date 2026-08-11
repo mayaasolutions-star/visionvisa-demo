@@ -1,0 +1,1266 @@
+import React from 'react';
+import Link from 'next/link';
+import HeroSearchForm from '../components/HeroSearchForm';
+
+export const metadata = {
+    title: "Vision Visa | Visa Assistance for International Travel",
+
+    description:
+        "Vision Visa provides visa assistance for tourist, visitor, business, study and work visas, along with travel insurance, forex and international air ticket services.",
+
+    keywords: [
+        "Vision Visa",
+        "visa consultant",
+        "visa assistance",
+        "visa services",
+        "tourist visa",
+        "visitor visa",
+        "business visa",
+        "study visa",
+        "student visa",
+        "work visa",
+        "visa application assistance",
+        "visa requirements",
+        "travel insurance",
+        "forex services",
+        "international air tickets",
+        "international travel services"
+    ],
+
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1
+        }
+    },
+
+    alternates: {
+        canonical: "YOUR-VISION-VISA-DOMAIN/"
+    },
+
+    openGraph: {
+        title: "Vision Visa | Visa Assistance for International Travel",
+
+        description:
+            "Get guidance for tourist, visitor, business, study and work visa applications, with travel insurance, forex and international air ticket services.",
+
+        type: "website",
+
+        siteName: "Vision Visa",
+
+        url: "YOUR-VISION-VISA-DOMAIN/",
+
+        locale: "en_IN",
+
+        images: [
+            {
+                url: "YOUR-VISION-VISA-DOMAIN/images/vision-visa-home-og.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Vision Visa - Visa and International Travel Services"
+            }
+        ]
+    },
+
+    twitter: {
+        card: "summary_large_image",
+
+        title: "Vision Visa | Visa Assistance for International Travel",
+
+        description:
+            "Visa assistance for international travel, including tourist, visitor, business, study and work visas, plus travel insurance, forex and air tickets.",
+
+        images: [
+            "YOUR-VISION-VISA-DOMAIN/images/vision-visa-home-og.jpg"
+        ]
+    }
+};
+
+export default function HomePage() {
+    return (
+    <main>
+      {/*  Navigation  */}
+        {/*  Navigation  */}
+        {/*  Navigation  */}
+    
+    {/*  Hero & Search Section  */}
+    <section className="hero-section">
+        {/*  Animated Travel Background Canvas  */}
+        <div className="hero-bg-canvas" aria-hidden="true">
+            <div className="hero-world-map"></div>
+            <div className="hero-blob blob-1"></div>
+            <div className="hero-blob blob-2"></div>
+            
+            <svg className="hero-flight-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+                <path d="M-100,450 C300,100 800,500 1540,150" className="hero-path-line path-blue" />
+                <path d="M-50,150 C450,550 950,50 1490,400" className="hero-path-line path-orange" />
+            </svg>
+            
+            <div className="hero-plane hero-plane-1">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.7 5.2c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+                </svg>
+            </div>
+            <div className="hero-plane hero-plane-2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.7 5.2c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div className="container hero-content-wrapper">
+            <div className="hero-header reveal">
+                <span className="section-label">
+                    VISA & TRAVEL SERVICES
+                </span>
+
+                <h1 className="hero-main-title">
+                    Your Journey Starts With the Right Visa.
+                </h1>
+
+                <p className="hero-sub-title">
+                    Visa assistance for travel, study, work and business, with
+                    travel insurance, forex and air tickets under one roof.
+                </p>
+
+                <div
+                    style={{
+                        "display": "flex",
+                        "gap": "16px",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "flexWrap": "wrap",
+                        "marginBottom": "8px"
+                    }}
+                >
+                    <a href="/contact" className="btn btn-primary">
+                        Apply Now
+                    </a>
+
+                    <a href="/contact" className="btn btn-secondary">
+                        Talk to Our Team
+                    </a>
+                </div>
+            </div>
+
+            <div className="search-container reveal">
+                <HeroSearchForm />
+            </div>
+        </div>
+    </section>
+
+    {/*  Destinations Grid  */}
+    <section className="destinations" style={{"paddingTop":"36px","paddingBottom":"48px"}}>
+        <div className="container">
+            <div className="destination-grid">
+            {/*  Row 1: 1 Large + 2 Standard  */}
+
+<a href="/country/argentina" className="card card-large reveal">
+    <img src="images/Argentina.webp" alt="Argentina" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">South America</span>
+        <h3 className="card-title">Argentina</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/australia" className="card reveal reveal-delay-1">
+    <img src="images/Australia.webp" alt="Australia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Oceania</span>
+        <h3 className="card-title">Australia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/austria" className="card reveal reveal-delay-2">
+    <img src="images/Austria.webp" alt="Austria" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Austria</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 2: 4 Standard  */}
+
+<a href="/country/azerbaijan" className="card reveal">
+    <img src="images/Azerbaijan.webp" alt="Azerbaijan" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Azerbaijan</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/bahrain" className="card reveal reveal-delay-1">
+    <img src="images/Bahrain.webp" alt="Bahrain" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Bahrain</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/bangladesh" className="card reveal reveal-delay-2">
+    <img src="images/Bangladesh.webp" alt="Bangladesh" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Bangladesh</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/belgium" className="card reveal reveal-delay-3">
+    <img src="images/Belgium.webp" alt="Belgium" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Belgium</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 3: 1 Normal + 1 Large + 1 Normal  */}
+
+<a href="/country/brazil" className="card reveal reveal-delay-1">
+    <img src="images/Brazil.webp" alt="Brazil" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">South America</span>
+        <h3 className="card-title">Brazil</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/canada" className="card card-large reveal">
+    <img src="images/Canada.webp" alt="Canada" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">North America</span>
+        <h3 className="card-title">Canada</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/china" className="card reveal reveal-delay-2">
+    <img src="images/China.webp" alt="China" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">China</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 4: 4 Standard  */}
+
+<a href="/country/costa-rica" className="card reveal">
+    <img src="images/Costa-Rica.webp" alt="Costa Rica" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Central America</span>
+        <h3 className="card-title">Costa Rica</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/croatia" className="card reveal reveal-delay-1">
+    <img src="images/Croatia.webp" alt="Croatia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Croatia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/cyprus" className="card reveal reveal-delay-2">
+    <img src="images/Cyprus.webp" alt="Cyprus" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Cyprus</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/czech-republic" className="card reveal reveal-delay-3">
+    <img src="images/Czech-Republic.webp" alt="Czech Republic" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Czech Republic</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 5: 2 Normal + 1 Large  */}
+
+<a href="/country/denmark" className="card reveal reveal-delay-1">
+    <img src="images/Copenhagen-denmark.webp" alt="Denmark" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Denmark</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/egypt" className="card reveal reveal-delay-2">
+    <img src="images/Egypt.webp" alt="Egypt" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Africa</span>
+        <h3 className="card-title">Egypt</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/estonia" className="card card-large reveal">
+    <img src="images/Estonia.webp" alt="Estonia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Estonia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 6: 1 Large + 2 Standard  */}
+
+<a href="/country/finland" className="card card-large reveal">
+    <img src="images/Finland.webp" alt="Finland" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Finland</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/france" className="card reveal reveal-delay-1">
+    <img src="images/France.webp" alt="France" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">France</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/georgia" className="card reveal reveal-delay-2">
+    <img src="images/Georgia.webp" alt="Georgia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Georgia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 7: 4 Standard  */}
+
+<a href="/country/germany" className="card reveal">
+    <img src="images/Germany.webp" alt="Germany" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Germany</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/ghana" className="card reveal reveal-delay-1">
+    <img src="images/Ghana.webp" alt="Ghana" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Africa</span>
+        <h3 className="card-title">Ghana</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/greece" className="card reveal reveal-delay-2">
+    <img src="images/Greece.webp" alt="Greece" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Greece</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/haiti" className="card reveal reveal-delay-3">
+    <img src="images/Haiti.webp" alt="Haiti" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Caribbean</span>
+        <h3 className="card-title">Haiti</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 8: 1 Normal + 1 Large + 1 Normal  */}
+
+<a href="/country/hungary" className="card reveal reveal-delay-1">
+    <img src="images/Hungary.webp" alt="Hungary" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Hungary</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/iceland" className="card card-large reveal">
+    <img src="images/Iceland.webp" alt="Iceland" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Iceland</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/indonesia" className="card reveal reveal-delay-2">
+    <img src="images/Indonesia-Bali-.webp" alt="Indonesia (Bali)" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Indonesia (Bali)</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 9: 4 Standard  */}
+
+<a href="/country/iran" className="card reveal">
+    <img src="images/Iran.webp" alt="Iran" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Iran</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/ireland" className="card reveal reveal-delay-1">
+    <img src="images/Ireland.webp" alt="Ireland" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Ireland</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/israel" className="card reveal reveal-delay-2">
+    <img src="images/Israel.webp" alt="Israel" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Israel</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/italy" className="card reveal reveal-delay-3">
+    <img src="images/Italy.webp" alt="Italy" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Italy</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 10: 2 Normal + 1 Large  */}
+
+<a href="/country/japan" className="card reveal reveal-delay-1">
+    <img src="images/Japan.webp" alt="Japan" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Japan</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/kuwait" className="card reveal reveal-delay-2">
+    <img src="images/Kuwait.webp" alt="Kuwait" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Kuwait</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/luxembourg" className="card card-large reveal">
+    <img src="images/Luxembourg.webp" alt="Luxembourg" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Luxembourg</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 11: 1 Large + 2 Standard  */}
+
+<a href="/country/madagascar" className="card card-large reveal">
+    <img src="images/Madagascar-2048x1366.webp" alt="Madagascar" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Africa</span>
+        <h3 className="card-title">Madagascar</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/malaysia" className="card reveal reveal-delay-1">
+    <img src="images/Malaysia.webp" alt="Malaysia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Malaysia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/malta" className="card reveal reveal-delay-2">
+    <img src="images/Malta.webp" alt="Malta" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Malta</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 12: 4 Standard  */}
+
+<a href="/country/morocco" className="card reveal">
+    <img src="images/Morocco.webp" alt="Morocco" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Africa</span>
+        <h3 className="card-title">Morocco</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/netherlands" className="card reveal reveal-delay-1">
+    <img src="images/Netherlands.webp" alt="Netherlands" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Netherlands</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/new-zealand" className="card reveal reveal-delay-2">
+    <img src="images/New-Zealand.webp" alt="New Zealand" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Oceania</span>
+        <h3 className="card-title">New Zealand</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/norway" className="card reveal reveal-delay-3">
+    <img src="images/Norway.webp" alt="Norway" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Norway</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 13: 1 Normal + 1 Large + 1 Normal  */}
+
+<a href="/country/oman" className="card reveal reveal-delay-1">
+    <img src="images/Oman.webp" alt="Oman" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Oman</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/panama" className="card card-large reveal">
+    <img src="images/Panama.webp" alt="Panama" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Central America</span>
+        <h3 className="card-title">Panama</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/philippines" className="card reveal reveal-delay-2">
+    <img src="images/Philippines.webp" alt="Philippines" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Philippines</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 14: 4 Standard  */}
+
+<a href="/country/poland" className="card reveal">
+    <img src="images/Poland.webp" alt="Poland" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Poland</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/portugal" className="card reveal reveal-delay-1">
+    <img src="images/Portugal.webp" alt="Portugal" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Portugal</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/russia" className="card reveal reveal-delay-2">
+    <img src="images/Russia.webp" alt="Russia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe / Asia</span>
+        <h3 className="card-title">Russia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/saudi-arabia" className="card reveal reveal-delay-3">
+    <img src="images/Saudi-Arabia.webp" alt="Saudi Arabia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Saudi Arabia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 15: 2 Normal + 1 Large  */}
+
+<a href="/country/singapore" className="card reveal reveal-delay-1">
+    <img src="images/Singapore.webp" alt="Singapore" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Singapore</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/slovakia" className="card reveal reveal-delay-2">
+    <img src="images/Slovakia.webp" alt="Slovakia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Slovakia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/slovenia" className="card card-large reveal">
+    <img src="images/Slovenia.webp" alt="Slovenia" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Slovenia</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 16: 1 Large + 2 Standard  */}
+
+<a href="/country/south-africa" className="card card-large reveal">
+    <img src="images/South-Africa.webp" alt="South Africa" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Africa</span>
+        <h3 className="card-title">South Africa</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/south-korea" className="card reveal reveal-delay-1">
+    <img src="images/South-Korea.webp" alt="South Korea" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">South Korea</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/spain" className="card reveal reveal-delay-2">
+    <img src="images/Spain.webp" alt="Spain" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Spain</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 17: 4 Standard  */}
+
+<a href="/country/sri-lanka" className="card reveal">
+    <img src="images/Sri-lanka.webp" alt="Sri Lanka" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Sri Lanka</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/sweden" className="card reveal reveal-delay-1">
+    <img src="images/Sweden.webp" alt="Sweden" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Sweden</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/switzerland" className="card reveal reveal-delay-2">
+    <img src="images/Switzerland.webp" alt="Switzerland" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Switzerland</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/taiwan" className="card reveal reveal-delay-3">
+    <img src="images/Taiwan.webp" alt="Taiwan" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Taiwan</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 18: 1 Normal + 1 Large + 1 Normal  */}
+
+<a href="/country/thailand" className="card reveal reveal-delay-1">
+    <img src="images/Thailand.webp" alt="Thailand" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Thailand</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/turkey" className="card card-large reveal">
+    <img src="images/Turkey.webp" alt="Turkey" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe / Asia</span>
+        <h3 className="card-title">Turkey</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/united-arab-emirates" className="card reveal reveal-delay-2">
+    <img src="images/United-Arab-Emirate-UAE-DUBAI.webp" alt="UAE" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">UAE</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 19: 4 Standard  */}
+
+<a href="/country/ukraine" className="card reveal">
+    <img src="images/Ukraine.webp" alt="Ukraine" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">Ukraine</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/united-kingdom" className="card reveal reveal-delay-1">
+    <img src="images/United-Kingdom.webp" alt="United Kingdom" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Europe</span>
+        <h3 className="card-title">United Kingdom</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/united-states" className="card reveal reveal-delay-2">
+    <img src="images/USA.webp" alt="USA" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">North America</span>
+        <h3 className="card-title">USA</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+<a href="/country/vietnam" className="card reveal reveal-delay-3">
+    <img src="images/Vietnam.webp" alt="Vietnam" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Asia</span>
+        <h3 className="card-title">Vietnam</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            {/*  Row 20: 2 Normal + 1 Large  */}
+
+<a href="/country/yemen" className="card reveal reveal-delay-1">
+    <img src="images/Yemen.webp" alt="Yemen" className="card-img" loading="lazy" />
+    <div className="card-overlay">
+        <span className="card-tag">Middle East</span>
+        <h3 className="card-title">Yemen</h3>
+        <div className="card-info">
+            <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+    </div>
+</a>
+
+            </div>
+</div></section>
+
+    {/*  Why Vision Visa  */}
+    <section className="bg-off-white">
+    <div className="container">
+
+        <div
+            className="reveal mb-48"
+            style={{
+                "textAlign": "center",
+                "maxWidth": "640px",
+                "marginLeft": "auto",
+                "marginRight": "auto"
+            }}
+        >
+            <span className="section-label">
+                WHY VISION VISA
+            </span>
+
+            <h2 className="display-text mb-12">
+                Visa guidance without the confusion.
+            </h2>
+
+            <p className="body-large">
+                Clear advice, practical support and everything you need
+                to prepare for your international journey.
+            </p>
+        </div>
+
+
+        <div
+            className="destination-grid"
+            style={{
+                "gridTemplateColumns": "repeat(3, 1fr)"
+            }}
+        >
+
+            <div className="category-card reveal">
+
+                <div className="category-icon">
+                    <i data-lucide="message-circle"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        Clear Guidance
+                    </h3>
+
+                    <p className="body-small">
+                        Understand your visa requirements and next steps
+                        without complicated explanations.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className="category-card reveal reveal-delay-1">
+
+                <div className="category-icon">
+                    <i data-lucide="file-check-2"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        Document Support
+                    </h3>
+
+                    <p className="body-small">
+                        Get practical help understanding and preparing the
+                        documents needed for your application.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className="category-card reveal reveal-delay-2">
+
+                <div className="category-icon">
+                    <i data-lucide="eye"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        Straightforward Process
+                    </h3>
+
+                    <p className="body-small">
+                        Know what to expect at each stage of your visa
+                        application.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className="category-card reveal">
+
+                <div className="category-icon">
+                    <i data-lucide="plane"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        Travel Services
+                    </h3>
+
+                    <p className="body-small">
+                        Visa assistance, travel insurance, forex and air
+                        tickets, all in one place.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className="category-card reveal reveal-delay-1">
+
+                <div className="category-icon">
+                    <i data-lucide="headphones"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        Personal Support
+                    </h3>
+
+                    <p className="body-small">
+                        Have a question? Speak with our team about your
+                        travel and visa plans.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className="category-card reveal reveal-delay-2">
+
+                <div className="category-icon">
+                    <i data-lucide="globe-2"></i>
+                </div>
+
+                <div>
+                    <h3 className="mb-12">
+                        International Travel
+                    </h3>
+
+                    <p className="body-small">
+                        Get assistance for different visa types and
+                        international travel needs.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    {/*  Services  */}
+    <section>
+    <div className="container">
+
+        <div className="reveal services-header">
+
+            <span className="section-label">
+                OUR SERVICES
+            </span>
+
+            <h2 className="display-text">
+                Everything You Need for Your Journey
+            </h2>
+
+            <p className="body-large">
+                From visas to flights, we help you prepare for international travel.
+            </p>
+
+        </div>
+
+
+        <div className="category-grid reveal">
+
+            <a
+                href="/visas"
+                className="category-card"
+            >
+                <div className="category-card-content">
+
+                    <h3>
+                        Visa Services
+                    </h3>
+
+                    <p>
+                        Assistance for tourist, visitor, business, study and work visas.
+                    </p>
+
+                </div>
+
+                <div className="category-card-cta">
+                    <span>
+                        Explore Visas
+                    </span>
+
+                    <i data-lucide="arrow-right"></i>
+                </div>
+            </a>
+
+
+            <a
+                href="/travel-insurance"
+                className="category-card"
+            >
+                <div className="category-card-content">
+
+                    <h3>
+                        Travel Insurance
+                    </h3>
+
+                    <p>
+                        Travel insurance options to help protect you on your journey.
+                    </p>
+
+                </div>
+
+                <div className="category-card-cta">
+                    <span>
+                        Explore Insurance
+                    </span>
+
+                    <i data-lucide="arrow-right"></i>
+                </div>
+            </a>
+
+
+            <a
+                href="/forex"
+                className="category-card"
+            >
+                <div className="category-card-content">
+
+                    <h3>
+                        Forex
+                    </h3>
+
+                    <p>
+                        Foreign exchange services for your international travel needs.
+                    </p>
+
+                </div>
+
+                <div className="category-card-cta">
+                    <span>
+                        Explore Forex
+                    </span>
+
+                    <i data-lucide="arrow-right"></i>
+                </div>
+            </a>
+
+
+            <a
+                href="/air-tickets"
+                className="category-card"
+            >
+                <div className="category-card-content">
+
+                    <h3>
+                        Air Tickets
+                    </h3>
+
+                    <p>
+                        International flight booking assistance for your travel plans.
+                    </p>
+
+                </div>
+
+                <div className="category-card-cta">
+                    <span>
+                        Explore Flights
+                    </span>
+
+                    <i data-lucide="arrow-right"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+    {/*  Final CTA  */}
+    <section className="visa-cta">
+    <div className="container">
+
+        <div className="cta-card reveal">
+
+            <span className="section-label">
+                PLAN YOUR JOURNEY
+            </span>
+
+            <h2>
+                Not Sure Where to Start?
+            </h2>
+
+            <p>
+                Tell us where you want to go. We'll help you understand the
+                visa requirements and next steps.
+            </p>
+
+            <div className="cta-buttons">
+
+                <a
+                    href="/contact"
+                    className="btn btn-primary"
+                >
+                    Apply Now
+                </a>
+
+                <a
+                    href="/contact"
+                    className="btn btn-secondary"
+                >
+                    Talk to Our Team
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    {/*  Footer  */}
+    </main>
+  );
+}

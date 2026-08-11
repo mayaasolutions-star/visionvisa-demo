@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Argentina",
+    "slug": "argentina",
+    "visaType": "Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ar.png"
+  },
+  {
+    "name": "Australia",
+    "slug": "australia",
+    "visaType": "Visitor Visa (Subclass 600)",
+    "flagImage": "https://flagcdn.com/w40/au.png"
+  },
+  {
+    "name": "Austria",
+    "slug": "austria",
+    "visaType": "Austria Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/at.png"
+  },
+  {
+    "name": "Azerbaijan",
+    "slug": "azerbaijan",
+    "visaType": "Azerbaijan eVisa",
+    "flagImage": "https://flagcdn.com/w40/az.png"
+  },
+  {
+    "name": "Bahrain",
+    "slug": "bahrain",
+    "visaType": "Bahrain eVisa / Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/bh.png"
+  },
+  {
+    "name": "Bangladesh",
+    "slug": "bangladesh",
+    "visaType": "Tourist / Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/bd.png"
+  },
+  {
+    "name": "Belgium",
+    "slug": "belgium",
+    "visaType": "Belgium Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/be.png"
+  },
+  {
+    "name": "Brazil",
+    "slug": "brazil",
+    "visaType": "Visitor Visa (VIVIS)",
+    "flagImage": "https://flagcdn.com/w40/br.png"
+  },
+  {
+    "name": "Canada",
+    "slug": "canada",
+    "visaType": "Visitor Visa (Temporary Resident Visa)",
+    "flagImage": "https://flagcdn.com/w40/ca.png"
+  },
+  {
+    "name": "China",
+    "slug": "china",
+    "visaType": "Tourist Visa (L)",
+    "flagImage": "https://flagcdn.com/w40/cn.png"
+  },
+  {
+    "name": "Costa Rica",
+    "slug": "costa-rica",
+    "visaType": "Costa Rica Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/cr.png"
+  },
+  {
+    "name": "Croatia",
+    "slug": "croatia",
+    "visaType": "Croatia Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/hr.png"
+  },
+  {
+    "name": "Cyprus",
+    "slug": "cyprus",
+    "visaType": "Cyprus Short-Stay Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/cy.png"
+  },
+  {
+    "name": "Czech Republic",
+    "slug": "czech-republic",
+    "visaType": "Czech Republic Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/cz.png"
+  },
+  {
+    "name": "Denmark",
+    "slug": "denmark",
+    "visaType": "Denmark Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/dk.png"
+  },
+  {
+    "name": "Egypt",
+    "slug": "egypt",
+    "visaType": "Egypt Tourist Visa / eVisa",
+    "flagImage": "https://flagcdn.com/w40/eg.png"
+  },
+  {
+    "name": "Estonia",
+    "slug": "estonia",
+    "visaType": "Estonia Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/ee.png"
+  },
+  {
+    "name": "Finland",
+    "slug": "finland",
+    "visaType": "Finland Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/fi.png"
+  },
+  {
+    "name": "France",
+    "slug": "france",
+    "visaType": "France Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/fr.png"
+  },
+  {
+    "name": "Georgia",
+    "slug": "georgia",
+    "visaType": "Georgia eVisa",
+    "flagImage": "https://flagcdn.com/w40/ge.png"
+  },
+  {
+    "name": "Germany",
+    "slug": "germany",
+    "visaType": "Germany Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/de.png"
+  },
+  {
+    "name": "Ghana",
+    "slug": "ghana",
+    "visaType": "Ghana Entry Visa",
+    "flagImage": "https://flagcdn.com/w40/gh.png"
+  },
+  {
+    "name": "Greece",
+    "slug": "greece",
+    "visaType": "Greece Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/gr.png"
+  },
+  {
+    "name": "Haiti",
+    "slug": "haiti",
+    "visaType": "Visa-Free for Indian Passport Holders",
+    "flagImage": "https://flagcdn.com/w40/ht.png"
+  },
+  {
+    "name": "Hungary",
+    "slug": "hungary",
+    "visaType": "Hungary Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/hu.png"
+  },
+  {
+    "name": "Iceland",
+    "slug": "iceland",
+    "visaType": "Iceland Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/is.png"
+  },
+  {
+    "name": "Indonesia (Bali)",
+    "slug": "indonesia-bali",
+    "visaType": "e-VOA / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/id.png"
+  },
+  {
+    "name": "Iran",
+    "slug": "iran",
+    "visaType": "Iran eVisa / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ir.png"
+  },
+  {
+    "name": "Ireland",
+    "slug": "ireland",
+    "visaType": "Short Stay 'C' Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ie.png"
+  },
+  {
+    "name": "Israel",
+    "slug": "israel",
+    "visaType": "B/2 Visitor Visa / eVisa-B2",
+    "flagImage": "https://flagcdn.com/w40/il.png"
+  },
+  {
+    "name": "Italy",
+    "slug": "italy",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/it.png"
+  },
+  {
+    "name": "Japan",
+    "slug": "japan",
+    "visaType": "e-Visa / Short Term Visa",
+    "flagImage": "https://flagcdn.com/w40/jp.png"
+  },
+  {
+    "name": "Kuwait",
+    "slug": "kuwait",
+    "visaType": "eVisa",
+    "flagImage": "https://flagcdn.com/w40/kw.png"
+  },
+  {
+    "name": "Luxembourg",
+    "slug": "luxembourg",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/lu.png"
+  },
+  {
+    "name": "Madagascar",
+    "slug": "madagascar",
+    "visaType": "eVisa / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/mg.png"
+  },
+  {
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "visaType": "eVISA / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/my.png"
+  },
+  {
+    "name": "Malta",
+    "slug": "malta",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/mt.png"
+  },
+  {
+    "name": "Morocco",
+    "slug": "morocco",
+    "visaType": "eVisa / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ma.png"
+  },
+  {
+    "name": "Netherlands",
+    "slug": "netherlands",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/nl.png"
+  },
+  {
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "visaType": "Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/nz.png"
+  },
+  {
+    "name": "Norway",
+    "slug": "norway",
+    "visaType": "Schengen Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/no.png"
+  },
+  {
+    "name": "Oman",
+    "slug": "oman",
+    "visaType": "Tourist eVisa",
+    "flagImage": "https://flagcdn.com/w40/om.png"
+  },
+  {
+    "name": "Panama",
+    "slug": "panama",
+    "visaType": "Stamped Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/pa.png"
+  },
+  {
+    "name": "Philippines",
+    "slug": "philippines",
+    "visaType": "Visa-Free Entry / Temporary Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/ph.png"
+  },
+  {
+    "name": "Poland",
+    "slug": "poland",
+    "visaType": "Schengen Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/pl.png"
+  },
+  {
+    "name": "Portugal",
+    "slug": "portugal",
+    "visaType": "Schengen Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/pt.png"
+  },
+  {
+    "name": "Russia",
+    "slug": "russia",
+    "visaType": "Unified e-Visa",
+    "flagImage": "https://flagcdn.com/w40/ru.png"
+  },
+  {
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "visaType": "Tourist eVisa",
+    "flagImage": "https://flagcdn.com/w40/sa.png"
+  },
+  {
+    "name": "Singapore",
+    "slug": "singapore",
+    "visaType": "e-Visa (Subclass 14A)",
+    "flagImage": "https://flagcdn.com/w40/sg.png"
+  },
+  {
+    "name": "Slovakia",
+    "slug": "slovakia",
+    "visaType": "Schengen Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/sk.png"
+  },
+  {
+    "name": "Slovenia",
+    "slug": "slovenia",
+    "visaType": "Schengen Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/si.png"
+  },
+  {
+    "name": "South Africa",
+    "slug": "south-africa",
+    "visaType": "Visitor's Visa (Section 11)",
+    "flagImage": "https://flagcdn.com/w40/za.png"
+  },
+  {
+    "name": "South Korea",
+    "slug": "south-korea",
+    "visaType": "C-3-9 Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/kr.png"
+  },
+  {
+    "name": "Spain",
+    "slug": "spain",
+    "visaType": "Schengen Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/es.png"
+  },
+  {
+    "name": "Sri Lanka",
+    "slug": "sri-lanka",
+    "visaType": "Tourist ETA",
+    "flagImage": "https://flagcdn.com/w40/lk.png"
+  },
+  {
+    "name": "Sweden",
+    "slug": "sweden",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/se.png"
+  },
+  {
+    "name": "Switzerland",
+    "slug": "switzerland",
+    "visaType": "Schengen Visa",
+    "flagImage": "https://flagcdn.com/w40/ch.png"
+  },
+  {
+    "name": "Taiwan",
+    "slug": "taiwan",
+    "visaType": "Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/tw.png"
+  },
+  {
+    "name": "Thailand",
+    "slug": "thailand",
+    "visaType": "Tourist Visa / Visa Exemption",
+    "flagImage": "https://flagcdn.com/w40/th.png"
+  },
+  {
+    "name": "Turkey",
+    "slug": "turkey",
+    "visaType": "e-Visa / Sticker Visa",
+    "flagImage": "https://flagcdn.com/w40/tr.png"
+  },
+  {
+    "name": "UAE",
+    "slug": "uae",
+    "visaType": "Tourist Visa / eVisa",
+    "flagImage": "https://flagcdn.com/w40/ae.png"
+  },
+  {
+    "name": "Ukraine",
+    "slug": "ukraine",
+    "visaType": "eVisa / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ua.png"
+  },
+  {
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "visaType": "Standard Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/gb.png"
+  },
+  {
+    "name": "USA",
+    "slug": "usa",
+    "visaType": "B1/B2 Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/us.png"
+  },
+  {
+    "name": "Vietnam",
+    "slug": "vietnam",
+    "visaType": "eVisa",
+    "flagImage": "https://flagcdn.com/w40/vn.png"
+  },
+  {
+    "name": "Yemen",
+    "slug": "yemen",
+    "visaType": "Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/ye.png"
+  }
+]

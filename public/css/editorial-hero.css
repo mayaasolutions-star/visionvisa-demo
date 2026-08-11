@@ -1,0 +1,684 @@
+/* ==========================================================================
+   VISION VISA - DISTINCT EDITORIAL HERO SYSTEM FOR INNER PAGES
+   ========================================================================== */
+
+/* Base Hero Styling */
+.inner-hero {
+    position: relative;
+    padding: 120px 0 70px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.inner-hero-dark {
+    background: linear-gradient(135deg, #0A1128 0%, #06182C 100%);
+    color: var(--white);
+}
+
+.inner-hero-soft {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: var(--slate-900);
+}
+
+.inner-hero-accent {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: var(--white);
+}
+
+/* Background Texture Pattern */
+.hero-pattern-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(10, 17, 40, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.inner-hero-dark .hero-pattern-dots,
+.inner-hero-accent .hero-pattern-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 1: VISAS (Compact Refined Editorial)
+   -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 1: VISAS (Content Left | Map Right - Compact Refined)
+   -------------------------------------------------------------------------- */
+.visas-inner-hero {
+    position: relative;
+    padding: 85px 0 30px;
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: var(--slate-900);
+    overflow: hidden;
+}
+
+.visas-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.visas-hero-content {
+    max-width: 480px;
+}
+
+.visas-hero-content .editorial-tag {
+    margin-bottom: 10px;
+}
+
+.visas-hero-content .editorial-title {
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 22px; /* Good clear space between headline & subcopy */
+    max-width: 460px;
+}
+
+.visas-hero-content .editorial-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--slate-600);
+    max-width: 440px;
+    margin-bottom: 24px; /* Small space before CTA */
+}
+
+.visas-hero-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 310px;
+    box-shadow: 0 14px 32px rgba(10, 17, 40, 0.12);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background: var(--slate-900);
+}
+
+.visas-hero-frame .hero-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.visas-route-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.visas-anim-path {
+    stroke-dasharray: 8 6;
+    animation: visaPathFlow 15s linear infinite;
+}
+
+@keyframes visaPathFlow {
+    0% { stroke-dashoffset: 200; }
+    100% { stroke-dashoffset: 0; }
+}
+
+.visas-pulse-ring {
+    animation: visaRingPulse 2.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    transform-origin: 130px 190px;
+}
+
+.visas-pulse-ring-dest {
+    animation: visaRingPulse 2.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite 1.4s;
+    transform-origin: 370px 130px;
+}
+
+@keyframes visaRingPulse {
+    0% { r: 4px; opacity: 0.9; }
+    100% { r: 15px; opacity: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 2: TRAVEL INSURANCE (Content Left | Image Right)
+   -------------------------------------------------------------------------- */
+.insurance-inner-hero {
+    position: relative;
+    padding: 85px 0 30px;
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: var(--slate-900);
+    overflow: hidden;
+}
+
+.insurance-hero-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.insurance-hero-content {
+    max-width: 480px;
+}
+
+.insurance-hero-content .editorial-tag {
+    margin-bottom: 10px;
+}
+
+.insurance-hero-content .editorial-title {
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 22px; /* Good clear space between headline & subcopy */
+    max-width: 460px;
+}
+
+.insurance-hero-content .editorial-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--slate-600);
+    max-width: 440px;
+    margin-bottom: 24px; /* Small space before CTA */
+}
+
+.insurance-hero-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 310px;
+    box-shadow: 0 14px 32px rgba(10, 17, 40, 0.12);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background: var(--slate-900);
+}
+
+.insurance-hero-frame .hero-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.insurance-arc-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.insurance-arc-path {
+    stroke-dasharray: 6 6;
+    animation: arcPulseFlow 12s linear infinite;
+}
+
+@keyframes arcPulseFlow {
+    0% { stroke-dashoffset: 120; }
+    100% { stroke-dashoffset: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 3: FOREX (Image Left | Content Right - ALTERNATING!)
+   -------------------------------------------------------------------------- */
+.forex-inner-hero {
+    position: relative;
+    padding: 85px 0 30px;
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: var(--slate-900);
+    overflow: hidden;
+}
+
+.forex-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.forex-hero-content {
+    max-width: 480px;
+}
+
+.forex-hero-content .editorial-tag {
+    margin-bottom: 10px;
+}
+
+.forex-hero-content .editorial-title {
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 22px; /* Good clear space between headline & subcopy */
+    max-width: 460px;
+}
+
+.forex-hero-content .editorial-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--slate-600);
+    max-width: 440px;
+    margin-bottom: 24px; /* Small space before CTA */
+}
+
+.forex-hero-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 310px;
+    box-shadow: 0 14px 32px rgba(10, 17, 40, 0.12);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background: var(--slate-900);
+}
+
+.forex-hero-frame .hero-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.forex-journey-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.forex-path-flow {
+    stroke-dasharray: 6 6;
+    animation: forexPathFlow 14s linear infinite;
+}
+
+@keyframes forexPathFlow {
+    0% { stroke-dashoffset: 140; }
+    100% { stroke-dashoffset: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 4: AIR TICKETS (Content Left | Image Right)
+   -------------------------------------------------------------------------- */
+.tickets-inner-hero {
+    position: relative;
+    padding: 85px 0 30px;
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: var(--slate-900);
+    overflow: hidden;
+}
+
+.tickets-hero-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.tickets-hero-content {
+    max-width: 480px;
+}
+
+.tickets-hero-content .editorial-tag {
+    margin-bottom: 10px;
+}
+
+.tickets-hero-content .editorial-title {
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 22px; /* Good clear space between headline & subcopy */
+    max-width: 460px;
+}
+
+.tickets-hero-content .editorial-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--slate-600);
+    max-width: 440px;
+    margin-bottom: 24px; /* Small space before CTA */
+}
+
+.tickets-hero-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 310px;
+    box-shadow: 0 16px 36px rgba(10, 17, 40, 0.14);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background: var(--slate-900);
+}
+
+.tickets-hero-frame .hero-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.tickets-flight-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.tickets-flight-path {
+    stroke-dasharray: 7 5;
+    animation: flightPathFlow 12s linear infinite;
+}
+
+@keyframes flightPathFlow {
+    0% { stroke-dashoffset: 140; }
+    100% { stroke-dashoffset: 0; }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .visas-anim-path,
+    .visas-pulse-ring,
+    .visas-pulse-ring-dest,
+    .insurance-arc-path,
+    .forex-path-flow,
+    .tickets-flight-path {
+        animation: none !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .visas-inner-hero,
+    .insurance-inner-hero,
+    .forex-inner-hero,
+    .tickets-inner-hero {
+        padding: 80px 0 28px;
+    }
+    .visas-hero-grid,
+    .insurance-hero-grid,
+    .forex-hero-grid,
+    .tickets-hero-grid {
+        gap: 32px;
+    }
+    .visas-hero-frame,
+    .insurance-hero-frame,
+    .forex-hero-frame,
+    .tickets-hero-frame {
+        height: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .visas-inner-hero,
+    .insurance-inner-hero,
+    .forex-inner-hero,
+    .tickets-inner-hero {
+        padding: 75px 0 24px;
+    }
+    .visas-hero-grid,
+    .insurance-hero-grid,
+    .tickets-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .forex-hero-grid,
+    .visas-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .forex-hero-grid .forex-hero-frame,
+    .visas-hero-grid .visas-hero-frame {
+        order: 1; /* Image first on mobile */
+    }
+    .forex-hero-grid .forex-hero-content,
+    .visas-hero-grid .visas-hero-content {
+        order: 2; /* Content second on mobile */
+    }
+    .visas-hero-content,
+    .insurance-hero-content,
+    .forex-hero-content,
+    .tickets-hero-content {
+        max-width: 100%;
+    }
+    .visas-hero-frame,
+    .insurance-hero-frame,
+    .forex-hero-frame,
+    .tickets-hero-frame {
+        height: 220px;
+    }
+}
+
+.flight-route-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-luxury);
+    border: 1px solid var(--light-gray);
+    margin-top: 28px;
+}
+
+.flight-airports {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.airport-code {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--slate-900);
+}
+
+.airport-name {
+    font-size: 0.8rem;
+    color: var(--slate-600);
+}
+
+.flight-connector {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.connector-line {
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--accent-orange), var(--accent-orange) 6px, transparent 6px, transparent 12px);
+    position: relative;
+}
+
+.connector-plane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 4px;
+    border-radius: 50%;
+    color: var(--accent-orange);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 5: ABOUT (Story Editorial)
+   -------------------------------------------------------------------------- */
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.about-stat-card {
+    background: var(--off-white);
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--light-gray);
+    text-align: center;
+}
+
+.stat-num {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-lbl {
+    font-size: 0.75rem;
+    color: var(--slate-600);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT VARIANT 6: CONTACT & APPLY NOW (Direct Action Interface)
+   -------------------------------------------------------------------------- */
+.contact-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-quick-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.contact-pill-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--white);
+    padding: 14px 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--light-gray);
+    text-decoration: none;
+    color: var(--slate-900);
+    transition: var(--transition-fast);
+}
+
+.contact-pill-item:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-pill-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(249, 115, 22, 0.1);
+    color: var(--accent-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* Common Image Frame Styling */
+.hero-frame-container {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow-luxury);
+    background: var(--slate-800);
+}
+
+.hero-frame-img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.hero-frame-container:hover .hero-frame-img {
+    transform: scale(1.03);
+}
+
+/* Floating Badges (Positioned Inside Image Frame) */
+.floating-hero-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 12px 18px;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(10, 17, 40, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10;
+}
+
+.inner-hero-dark .floating-hero-badge,
+.inner-hero-accent .floating-hero-badge {
+    background: rgba(15, 23, 42, 0.88);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+}
+
+.badge-pos-top-right {
+    top: 16px;
+    right: 16px;
+}
+
+.badge-pos-bottom-left {
+    bottom: 16px;
+    left: 16px;
+}
+
+/* Responsive Scaling */
+@media (max-width: 1024px) {
+    .inner-hero {
+        padding: 100px 0 50px;
+    }
+    .visas-hero-grid,
+    .insurance-hero-grid,
+    .forex-hero-grid,
+    .tickets-hero-grid,
+    .about-hero-grid,
+    .contact-hero-grid {
+        gap: 36px;
+    }
+    .hero-frame-img {
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-hero {
+        padding: 90px 0 40px;
+    }
+    .visas-hero-grid,
+    .insurance-hero-grid,
+    .forex-hero-grid,
+    .tickets-hero-grid,
+    .about-hero-grid,
+    .contact-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .hero-frame-img {
+        height: 280px;
+    }
+    .badge-pos-top-right {
+        right: 8px;
+        top: -12px;
+    }
+    .badge-pos-bottom-left {
+        left: 8px;
+        bottom: -12px;
+    }
+}
