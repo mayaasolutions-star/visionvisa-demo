@@ -35,6 +35,9 @@ jobs:
       - name: Build Next.js site
         run: npm run build
 
+      # TEMPORARY GITHUB PAGES FIX ONLY
+      # This changes the generated /out files.
+      # It does NOT change your actual source files.
       - name: Fix paths for GitHub Pages demo
         shell: bash
         run: |
@@ -45,19 +48,22 @@ jobs:
           root = Path("out")
           prefix = "/visionvisa-demo"
 
-          def fix_path(path):
-              if not path.startswith("/"):
-                  return path
+          if not root.exists():
+              raise SystemExit("ERROR: out folder was not created by Next.js build.")
 
-              if path.startswith("//"):
-                  return path
+          def fix_path(value):
+              if not value.startswith("/"):
+                  return value
 
-              if path.startswith(prefix + "/") or path == prefix:
-                  return path
+              if value.startswith("//"):
+                  return value
 
-              return prefix + path
+              if value == prefix or value.startswith(prefix + "/"):
+                  return value
 
-          # Fix HTML files
+              return prefix + value
+
+          # Fix href/src in generated HTML
           for file in root.rglob("*.html"):
               text = file.read_text(encoding="utf-8")
 
@@ -66,8 +72,7 @@ jobs:
                   quote = match.group(2)
                   value = match.group(3)
 
-                  if value.startswith("/"):
-                      value = fix_path(value)
+                  value = fix_path(value)
 
                   return f"{attr}={quote}{value}{quote}"
 
@@ -77,29 +82,46 @@ jobs:
                   text
               )
 
-              # Fix inline CSS url(...)
+              # Fix CSS url(...) inside HTML
               text = re.sub(
-                  r'url\((["\']?)/(?!/)',
+                  r'url\((["\']?)/(?!/|visionvisa-demo/)',
                   lambda m: f'url({m.group(1)}{prefix}/',
                   text
               )
 
               file.write_text(text, encoding="utf-8")
 
-          # Fix CSS files
+          # Fix root-relative assets inside generated CSS
           for file in root.rglob("*.css"):
               text = file.read_text(encoding="utf-8")
 
               text = re.sub(
-                  r'url\((["\']?)/(?!/)',
+                  r'url\((["\']?)/(?!/|visionvisa-demo/)',
                   lambda m: f'url({m.group(1)}{prefix}/',
                   text
               )
 
               file.write_text(text, encoding="utf-8")
 
-          print("GitHub Pages paths fixed successfully.")
+          print("Temporary GitHub Pages path fix completed.")
           PY
+
+      # Verify important pages actually exist before deployment
+      - name: Verify generated pages
+        shell: bash
+        run: |
+          echo "Checking generated pages..."
+
+          test -f out/index.html
+          test -f out/visas/index.html
+          test -f out/forex/index.html
+          test -f out/contact/index.html
+          test -f out/about/index.html
+          test -f out/travel-insurance/index.html
+          test -f out/air-tickets/index.html
+          test -f out/apply-now/index.html
+
+          echo "All main pages exist."
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
