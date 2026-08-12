@@ -26,7 +26,12 @@ export function generateStaticParams() {
     fileContent.substring(jsonStart, jsonEnd + 1)
   );
 
-  return Object.keys(countriesData).map((slug) => ({
+  const slugs = new Set(Object.keys(countriesData));
+  slugs.add('united-states');
+  slugs.add('united-arab-emirates');
+  slugs.add('indonesia');
+
+  return Array.from(slugs).map((slug) => ({
     slug,
   }));
 }

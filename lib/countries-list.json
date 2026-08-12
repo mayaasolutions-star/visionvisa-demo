@@ -394,5 +394,23 @@
     "slug": "yemen",
     "visaType": "Tourist Visa",
     "flagImage": "https://flagcdn.com/w40/ye.png"
+  },
+  {
+    "name": "USA",
+    "slug": "united-states",
+    "visaType": "B1/B2 Visitor Visa",
+    "flagImage": "https://flagcdn.com/w40/us.png"
+  },
+  {
+    "name": "UAE",
+    "slug": "united-arab-emirates",
+    "visaType": "Tourist / Business Visa",
+    "flagImage": "https://flagcdn.com/w40/ae.png"
+  },
+  {
+    "name": "Indonesia",
+    "slug": "indonesia",
+    "visaType": "e-VOA / Tourist Visa",
+    "flagImage": "https://flagcdn.com/w40/id.png"
   }
 ]
