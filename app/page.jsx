@@ -161,7 +161,7 @@ export default function HomePage() {
             <div className="destination-grid">
             {/*  Row 1: 1 Large + 2 Standard  */}
 
-<a href="/country/argentina" className="card card-large reveal">
+<Link href="/country/argentina" className="card card-large reveal">
     <img src={getAssetPath("/images/Argentina.webp")} alt="Argentina" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">South America</span>
@@ -170,9 +170,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/australia" className="card reveal reveal-delay-1">
+<Link href="/country/australia" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Australia.webp")} alt="Australia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Oceania</span>
@@ -181,9 +181,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/austria" className="card reveal reveal-delay-2">
+<Link href="/country/austria" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Austria.webp")} alt="Austria" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -192,11 +192,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 2: 4 Standard  */}
 
-<a href="/country/azerbaijan" className="card reveal">
+<Link href="/country/azerbaijan" className="card reveal">
     <img src={getAssetPath("/images/Azerbaijan.webp")} alt="Azerbaijan" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -205,9 +205,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/bahrain" className="card reveal reveal-delay-1">
+<Link href="/country/bahrain" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Bahrain.webp")} alt="Bahrain" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -216,9 +216,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/bangladesh" className="card reveal reveal-delay-2">
+<Link href="/country/bangladesh" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Bangladesh.webp")} alt="Bangladesh" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -227,9 +227,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/belgium" className="card reveal reveal-delay-3">
+<Link href="/country/belgium" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Belgium.webp")} alt="Belgium" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -238,11 +238,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 3: 1 Normal + 1 Large + 1 Normal  */}
 
-<a href="/country/brazil" className="card reveal reveal-delay-1">
+<Link href="/country/brazil" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Brazil.webp")} alt="Brazil" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">South America</span>
@@ -251,9 +251,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/canada" className="card card-large reveal">
+<Link href="/country/canada" className="card card-large reveal">
     <img src={getAssetPath("/images/Canada.webp")} alt="Canada" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">North America</span>
@@ -262,9 +262,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/china" className="card reveal reveal-delay-2">
+<Link href="/country/china" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/China.webp")} alt="China" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -273,11 +273,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 4: 4 Standard  */}
 
-<a href="/country/costa-rica" className="card reveal">
+<Link href="/country/costa-rica" className="card reveal">
     <img src={getAssetPath("/images/Costa-Rica.webp")} alt="Costa Rica" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Central America</span>
@@ -286,9 +286,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/croatia" className="card reveal reveal-delay-1">
+<Link href="/country/croatia" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Croatia.webp")} alt="Croatia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -297,9 +297,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/cyprus" className="card reveal reveal-delay-2">
+<Link href="/country/cyprus" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Cyprus.webp")} alt="Cyprus" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -308,9 +308,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/czech-republic" className="card reveal reveal-delay-3">
+<Link href="/country/czech-republic" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Czech-Republic.webp")} alt="Czech Republic" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -319,11 +319,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 5: 2 Normal + 1 Large  */}
 
-<a href="/country/denmark" className="card reveal reveal-delay-1">
+<Link href="/country/denmark" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Copenhagen-denmark.webp")} alt="Denmark" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -332,9 +332,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/egypt" className="card reveal reveal-delay-2">
+<Link href="/country/egypt" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Egypt.webp")} alt="Egypt" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Africa</span>
@@ -343,9 +343,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/estonia" className="card card-large reveal">
+<Link href="/country/estonia" className="card card-large reveal">
     <img src={getAssetPath("/images/Estonia.webp")} alt="Estonia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -354,11 +354,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 6: 1 Large + 2 Standard  */}
 
-<a href="/country/finland" className="card card-large reveal">
+<Link href="/country/finland" className="card card-large reveal">
     <img src={getAssetPath("/images/Finland.webp")} alt="Finland" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -367,9 +367,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/france" className="card reveal reveal-delay-1">
+<Link href="/country/france" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/France.webp")} alt="France" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -378,9 +378,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/georgia" className="card reveal reveal-delay-2">
+<Link href="/country/georgia" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Georgia.webp")} alt="Georgia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -389,11 +389,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 7: 4 Standard  */}
 
-<a href="/country/germany" className="card reveal">
+<Link href="/country/germany" className="card reveal">
     <img src={getAssetPath("/images/Germany.webp")} alt="Germany" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -402,9 +402,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/ghana" className="card reveal reveal-delay-1">
+<Link href="/country/ghana" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Ghana.webp")} alt="Ghana" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Africa</span>
@@ -413,9 +413,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/greece" className="card reveal reveal-delay-2">
+<Link href="/country/greece" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Greece.webp")} alt="Greece" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -424,9 +424,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/haiti" className="card reveal reveal-delay-3">
+<Link href="/country/haiti" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Haiti.webp")} alt="Haiti" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Caribbean</span>
@@ -435,11 +435,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 8: 1 Normal + 1 Large + 1 Normal  */}
 
-<a href="/country/hungary" className="card reveal reveal-delay-1">
+<Link href="/country/hungary" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Hungary.webp")} alt="Hungary" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -448,9 +448,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/iceland" className="card card-large reveal">
+<Link href="/country/iceland" className="card card-large reveal">
     <img src={getAssetPath("/images/Iceland.webp")} alt="Iceland" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -459,9 +459,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/indonesia" className="card reveal reveal-delay-2">
+<Link href="/country/indonesia" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Indonesia-Bali-.webp")} alt="Indonesia (Bali)" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -470,11 +470,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 9: 4 Standard  */}
 
-<a href="/country/iran" className="card reveal">
+<Link href="/country/iran" className="card reveal">
     <img src={getAssetPath("/images/Iran.webp")} alt="Iran" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -483,9 +483,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/ireland" className="card reveal reveal-delay-1">
+<Link href="/country/ireland" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Ireland.webp")} alt="Ireland" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -494,9 +494,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/israel" className="card reveal reveal-delay-2">
+<Link href="/country/israel" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Israel.webp")} alt="Israel" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -505,9 +505,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/italy" className="card reveal reveal-delay-3">
+<Link href="/country/italy" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Italy.webp")} alt="Italy" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -516,11 +516,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 10: 2 Normal + 1 Large  */}
 
-<a href="/country/japan" className="card reveal reveal-delay-1">
+<Link href="/country/japan" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Japan.webp")} alt="Japan" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -529,9 +529,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/kuwait" className="card reveal reveal-delay-2">
+<Link href="/country/kuwait" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Kuwait.webp")} alt="Kuwait" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -540,9 +540,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/luxembourg" className="card card-large reveal">
+<Link href="/country/luxembourg" className="card card-large reveal">
     <img src={getAssetPath("/images/Luxembourg.webp")} alt="Luxembourg" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -551,11 +551,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 11: 1 Large + 2 Standard  */}
 
-<a href="/country/madagascar" className="card card-large reveal">
+<Link href="/country/madagascar" className="card card-large reveal">
     <img src={getAssetPath("/images/Madagascar-2048x1366.webp")} alt="Madagascar" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Africa</span>
@@ -564,9 +564,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/malaysia" className="card reveal reveal-delay-1">
+<Link href="/country/malaysia" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Malaysia.webp")} alt="Malaysia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -575,9 +575,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/malta" className="card reveal reveal-delay-2">
+<Link href="/country/malta" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Malta.webp")} alt="Malta" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -586,11 +586,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 12: 4 Standard  */}
 
-<a href="/country/morocco" className="card reveal">
+<Link href="/country/morocco" className="card reveal">
     <img src={getAssetPath("/images/Morocco.webp")} alt="Morocco" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Africa</span>
@@ -599,9 +599,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/netherlands" className="card reveal reveal-delay-1">
+<Link href="/country/netherlands" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Netherlands.webp")} alt="Netherlands" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -610,9 +610,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/new-zealand" className="card reveal reveal-delay-2">
+<Link href="/country/new-zealand" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/New-Zealand.webp")} alt="New Zealand" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Oceania</span>
@@ -621,9 +621,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/norway" className="card reveal reveal-delay-3">
+<Link href="/country/norway" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Norway.webp")} alt="Norway" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -632,11 +632,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 13: 1 Normal + 1 Large + 1 Normal  */}
 
-<a href="/country/oman" className="card reveal reveal-delay-1">
+<Link href="/country/oman" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Oman.webp")} alt="Oman" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -645,9 +645,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/panama" className="card card-large reveal">
+<Link href="/country/panama" className="card card-large reveal">
     <img src={getAssetPath("/images/Panama.webp")} alt="Panama" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Central America</span>
@@ -656,9 +656,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/philippines" className="card reveal reveal-delay-2">
+<Link href="/country/philippines" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Philippines.webp")} alt="Philippines" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -667,11 +667,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 14: 4 Standard  */}
 
-<a href="/country/poland" className="card reveal">
+<Link href="/country/poland" className="card reveal">
     <img src={getAssetPath("/images/Poland.webp")} alt="Poland" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -680,9 +680,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/portugal" className="card reveal reveal-delay-1">
+<Link href="/country/portugal" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Portugal.webp")} alt="Portugal" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -691,9 +691,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/russia" className="card reveal reveal-delay-2">
+<Link href="/country/russia" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Russia.webp")} alt="Russia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe / Asia</span>
@@ -702,9 +702,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/saudi-arabia" className="card reveal reveal-delay-3">
+<Link href="/country/saudi-arabia" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Saudi-Arabia.webp")} alt="Saudi Arabia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -713,11 +713,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 15: 2 Normal + 1 Large  */}
 
-<a href="/country/singapore" className="card reveal reveal-delay-1">
+<Link href="/country/singapore" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Singapore.webp")} alt="Singapore" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -726,9 +726,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/slovakia" className="card reveal reveal-delay-2">
+<Link href="/country/slovakia" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Slovakia.webp")} alt="Slovakia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -737,9 +737,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/slovenia" className="card card-large reveal">
+<Link href="/country/slovenia" className="card card-large reveal">
     <img src={getAssetPath("/images/Slovenia.webp")} alt="Slovenia" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -748,11 +748,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 16: 1 Large + 2 Standard  */}
 
-<a href="/country/south-africa" className="card card-large reveal">
+<Link href="/country/south-africa" className="card card-large reveal">
     <img src={getAssetPath("/images/South-Africa.webp")} alt="South Africa" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Africa</span>
@@ -761,9 +761,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/south-korea" className="card reveal reveal-delay-1">
+<Link href="/country/south-korea" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/South-Korea.webp")} alt="South Korea" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -772,9 +772,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/spain" className="card reveal reveal-delay-2">
+<Link href="/country/spain" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Spain.webp")} alt="Spain" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -783,11 +783,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 17: 4 Standard  */}
 
-<a href="/country/sri-lanka" className="card reveal">
+<Link href="/country/sri-lanka" className="card reveal">
     <img src={getAssetPath("/images/Sri-lanka.webp")} alt="Sri Lanka" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -796,9 +796,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/sweden" className="card reveal reveal-delay-1">
+<Link href="/country/sweden" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Sweden.webp")} alt="Sweden" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -807,9 +807,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/switzerland" className="card reveal reveal-delay-2">
+<Link href="/country/switzerland" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/Switzerland.webp")} alt="Switzerland" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -818,9 +818,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/taiwan" className="card reveal reveal-delay-3">
+<Link href="/country/taiwan" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Taiwan.webp")} alt="Taiwan" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -829,11 +829,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 18: 1 Normal + 1 Large + 1 Normal  */}
 
-<a href="/country/thailand" className="card reveal reveal-delay-1">
+<Link href="/country/thailand" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Thailand.webp")} alt="Thailand" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -842,9 +842,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/turkey" className="card card-large reveal">
+<Link href="/country/turkey" className="card card-large reveal">
     <img src={getAssetPath("/images/Turkey.webp")} alt="Turkey" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe / Asia</span>
@@ -853,9 +853,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/united-arab-emirates" className="card reveal reveal-delay-2">
+<Link href="/country/united-arab-emirates" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/United-Arab-Emirate-UAE-DUBAI.webp")} alt="UAE" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -864,11 +864,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 19: 4 Standard  */}
 
-<a href="/country/ukraine" className="card reveal">
+<Link href="/country/ukraine" className="card reveal">
     <img src={getAssetPath("/images/Ukraine.webp")} alt="Ukraine" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -877,9 +877,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/united-kingdom" className="card reveal reveal-delay-1">
+<Link href="/country/united-kingdom" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/United-Kingdom.webp")} alt="United Kingdom" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Europe</span>
@@ -888,9 +888,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/united-states" className="card reveal reveal-delay-2">
+<Link href="/country/united-states" className="card reveal reveal-delay-2">
     <img src={getAssetPath("/images/USA.webp")} alt="USA" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">North America</span>
@@ -899,9 +899,9 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
-<a href="/country/vietnam" className="card reveal reveal-delay-3">
+<Link href="/country/vietnam" className="card reveal reveal-delay-3">
     <img src={getAssetPath("/images/Vietnam.webp")} alt="Vietnam" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Asia</span>
@@ -910,11 +910,11 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             {/*  Row 20: 2 Normal + 1 Large  */}
 
-<a href="/country/yemen" className="card reveal reveal-delay-1">
+<Link href="/country/yemen" className="card reveal reveal-delay-1">
     <img src={getAssetPath("/images/Yemen.webp")} alt="Yemen" className="card-img" loading="lazy" />
     <div className="card-overlay">
         <span className="card-tag">Middle East</span>
@@ -923,7 +923,7 @@ export default function HomePage() {
             <div className="card-arrow"><i data-lucide="arrow-right"></i></div>
         </div>
     </div>
-</a>
+</Link>
 
             </div>
 </div></section>

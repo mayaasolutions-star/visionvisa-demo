@@ -101,7 +101,7 @@ export default function HeroSearchForm() {
         setSelectedSlug(country.slug);
         setIsDestOpen(false);
         setErrorMsg('');
-        window.location.href = `/country/${country.slug}`;
+        window.location.href = getAssetPath(`/country/${country.slug}`);
     };
 
     const handleSearchSubmit = (e) => {
@@ -127,7 +127,7 @@ export default function HeroSearchForm() {
         }
 
         if (targetSlug) {
-            window.location.href = `/country/${targetSlug}`;
+            window.location.href = getAssetPath(`/country/${targetSlug}`);
         } else {
             if (!trimmedQuery) {
                 setErrorMsg('Please select a destination country to proceed.');

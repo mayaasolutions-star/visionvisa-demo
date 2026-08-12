@@ -84,7 +84,7 @@
             }
 
             destDropdown.innerHTML = matches.map((c, idx) => `
-                <a href="/country/${c.slug}" 
+                <a href="${(window.VISION_VISA_BASE_PATH || '')}/country/${c.slug}" 
                    class="search-dropdown-item" 
                    data-slug="${c.slug}" 
                    data-name="${c.name}"
