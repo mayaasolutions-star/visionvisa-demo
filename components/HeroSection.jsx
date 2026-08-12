@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 
 /**
@@ -60,7 +61,7 @@ export default function HeroSection({
           {/* Right Visual Composition */}
           <div className="editorial-visual-frame reveal reveal-delay-1">
             <div className="editorial-image-container">
-              <img src={image} alt={title || "Vision Visa Travel"} className="editorial-image-main" />
+              <img src={getAssetPath(image)} alt={title || "Vision Visa Travel"} className="editorial-image-main" />
               <div className="editorial-image-overlay"></div>
             </div>
 

@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 
@@ -39,7 +40,7 @@ export default function APPLY_NOW_Page() {
                     </div>
 
                     <div className="hero-frame-container reveal reveal-delay-1">
-                        <img src="/images/about-hero.webp" alt="Apply Now - Start Journey" className="hero-frame-img" />
+                        <img src={getAssetPath("/images/about-hero.webp")} alt="Apply Now - Start Journey" className="hero-frame-img" />
                         
                         <div className="floating-hero-badge badge-pos-top-right">
                             <div className="editorial-badge-icon">

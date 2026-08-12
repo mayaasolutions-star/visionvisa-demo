@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 
@@ -16,7 +17,7 @@ export default function COUNTRY_TEMPLATE_Page() {
     {/*  HERO SECTION  */}
     <section className="country-hero">
         <div className="hero-bg">
-            <img id="heroBgImg" src="images/Australia.webp" alt="Country Hero" />
+            <img id="heroBgImg" src={getAssetPath("/images/Australia.webp")} alt="Country Hero" />
         </div>
         <div className="hero-overlay"></div>
         <div className="container hero-content">
@@ -170,7 +171,7 @@ export default function COUNTRY_TEMPLATE_Page() {
             </div>
             <div className="explore-grid">
                 <div className="featured-destination reveal">
-                    <img id="place1Img" src="images/Australia.webp" alt="Featured Destination" loading="lazy" />
+                    <img id="place1Img" src={getAssetPath("/images/Australia.webp")} alt="Featured Destination" loading="lazy" />
                     <div className="featured-content">
                         <span>Most Popular Destination</span>
                         <h3 id="place1Name">Capital & Historic Landmarks</h3>
@@ -179,21 +180,21 @@ export default function COUNTRY_TEMPLATE_Page() {
                 </div>
                 <div className="destination-list">
                     <div className="destination-card reveal">
-                        <img id="place2Img" src="images/Australia.webp" alt="Destination 2" loading="lazy" />
+                        <img id="place2Img" src={getAssetPath("/images/Australia.webp")} alt="Destination 2" loading="lazy" />
                         <div>
                             <h4 id="place2Name">Cultural & Heritage Sites</h4>
                             <p id="place2Desc">Experience rich history and architectural heritage.</p>
                         </div>
                     </div>
                     <div className="destination-card reveal reveal-delay-1">
-                        <img id="place3Img" src="images/Australia.webp" alt="Destination 3" loading="lazy" />
+                        <img id="place3Img" src={getAssetPath("/images/Australia.webp")} alt="Destination 3" loading="lazy" />
                         <div>
                             <h4 id="place3Name">Natural Wonders & Landscapes</h4>
                             <p id="place3Desc">Discover scenic beauty and outdoor views.</p>
                         </div>
                     </div>
                     <div className="destination-card reveal reveal-delay-2">
-                        <img id="place4Img" src="images/Australia.webp" alt="Destination 4" loading="lazy" />
+                        <img id="place4Img" src={getAssetPath("/images/Australia.webp")} alt="Destination 4" loading="lazy" />
                         <div>
                             <h4 id="place4Name">Local Markets & Cuisine</h4>
                             <p id="place4Desc">Taste authentic local dishes and bustling centers.</p>

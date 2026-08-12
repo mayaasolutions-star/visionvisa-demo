@@ -1,5 +1,6 @@
 'use client';
 
+import { getAssetPath } from '@/lib/asset-path';
 import React, { useState, useEffect, useRef } from 'react';
 import countriesData from '../lib/countries-list.json';
 
@@ -208,7 +209,7 @@ export default function HeroSearchForm() {
                                 >
                                     <div className="search-item-left">
                                         {c.flagImage && (
-                                            <img src={c.flagImage} alt={c.name} className="search-flag" />
+                                            <img src={getAssetPath(c.flagImage)} alt={c.name} className="search-flag" />
                                         )}
                                         <span className="search-country-name">
                                             {highlightMatch(c.name, trimmedQuery)}

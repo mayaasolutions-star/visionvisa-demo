@@ -1,5 +1,6 @@
 'use client';
 
+import { getAssetPath } from '@/lib/asset-path';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,36 +10,9 @@ export default function Navbar() {
 
   const [isScrolled, setIsScrolled] = useState(true);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isGitHubPages, setIsGitHubPages] = useState(false);
 
   /*
-   * Temporary GitHub Pages demo support.
-   * This automatically detects the GitHub Pages domain.
-   *
-   * When the website moves to Hostinger / visionvisa.in,
-   * this becomes false automatically.
-   */
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setIsGitHubPages(window.location.hostname.endsWith('github.io'));
-    }
-  }, []);
-
-  /*
-   * Prefix static assets only when running on the
-   * temporary GitHub Pages demo.
-   */
-  const assetPath = (path) => {
-    if (isGitHubPages) {
-      return `/visionvisa-demo${path}`;
-    }
-
-    return path;
-  };
-
-  /*
-   * Remove the temporary GitHub Pages base path
-   * when checking active navigation.
+   * Remove base path when checking active navigation.
    */
   const cleanPathname = pathname?.replace(/^\/visionvisa-demo/, '') || '/';
 
@@ -88,13 +62,13 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="logo-brand">
           <img
-            src={assetPath('/images/vision-visa-logo-symbol.webp')}
+            src={getAssetPath('/images/vision-visa-logo-symbol.webp')}
             alt="Vision Visa Symbol"
             className="logo-symbol"
           />
 
           <img
-            src={assetPath('/images/visionvisa-name-dark.webp')}
+            src={getAssetPath('/images/visionvisa-name-dark.webp')}
             alt="Vision Visa"
             className="logo-name"
           />

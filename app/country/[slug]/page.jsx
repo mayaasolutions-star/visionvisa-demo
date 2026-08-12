@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import fs from 'fs';
 import path from 'path';
@@ -79,7 +80,7 @@ export default async function CountrySlugPage({ params }) {
       {/* 1. HERO SECTION (Compact Master Hero) */}
       <section className="master-hero">
         <div className="hero-bg-frame">
-          <img id="heroBgImg" src={data.heroImage} alt={data.name} className="hero-cover-img" />
+          <img id="heroBgImg" src={getAssetPath(data.heroImage)} alt={data.name} className="hero-cover-img" />
           <div className="hero-dark-gradient"></div>
         </div>
         <div className="container hero-container">

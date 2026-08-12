@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 import HeroSection from '../../components/HeroSection';
@@ -119,7 +120,7 @@ export default function CONTACT_Page() {
                 </div>
 
                 <div className="hero-frame-container reveal reveal-delay-1">
-                    <img src="/images/businessvisa-hero.webp" alt="Contact Vision Visa Travel Desk" className="hero-frame-img" />
+                    <img src={getAssetPath("/images/businessvisa-hero.webp")} alt="Contact Vision Visa Travel Desk" className="hero-frame-img" />
                     
                     <div className="floating-hero-badge badge-pos-top-right">
                         <div className="editorial-badge-icon">

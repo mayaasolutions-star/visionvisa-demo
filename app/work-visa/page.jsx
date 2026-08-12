@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 
@@ -126,7 +127,7 @@ export default function WORK_VISA_Page() {
         <div className="reveal reveal-delay-1">
 
             <img
-                src="images/workvisa-hero.webp"
+                src={getAssetPath("/images/workvisa-hero.webp")}
                 alt="Professionals working together in an international workplace"
                 style={{
                     "width": "100%",

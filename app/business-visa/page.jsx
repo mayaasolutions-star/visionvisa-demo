@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 
@@ -122,7 +123,7 @@ export default function BUSINESS_VISA_Page() {
         <div className="reveal reveal-delay-1">
 
             <img
-                src="images/businessvisa-hero.webp"
+                src={getAssetPath("/images/businessvisa-hero.webp")}
                 alt="Business traveller preparing for an international business trip"
                 style={{
                     "width":"100%",

@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 import HeroSection from '../../components/HeroSection';
@@ -188,7 +189,7 @@ export default function FOREX_Page() {
 
             <div className="reveal reveal-delay-1">
                 <img
-                    src="images/forex-currencyexchange.webp"
+                    src={getAssetPath("/images/forex-currencyexchange.webp")}
                     alt="Foreign currency exchange for international travel"
                     style={{
                         "width": "100%",
@@ -218,7 +219,7 @@ export default function FOREX_Page() {
 
             <div className="reveal">
                 <img
-                    src="images/forex-forexcard.webp"
+                    src={getAssetPath("/images/forex-forexcard.webp")}
                     alt="Forex card for international travel"
                     style={{
                         "width": "100%",
@@ -424,7 +425,7 @@ export default function FOREX_Page() {
 
             <div className="reveal reveal-delay-1">
                 <img
-                    src="images/forex-internationalmoneytransfer.webp"
+                    src={getAssetPath("/images/forex-internationalmoneytransfer.webp")}
                     alt="International money transfer and remittance"
                     style={{
                         "width": "100%",
@@ -454,7 +455,7 @@ export default function FOREX_Page() {
 
             <div className="reveal">
                 <img
-                    src="images/forex-fprexforstudents.webp"
+                    src={getAssetPath("/images/forex-fprexforstudents.webp")}
                     alt="Forex services for students studying abroad"
                     style={{
                         "width": "100%",

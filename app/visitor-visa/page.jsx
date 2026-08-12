@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 
@@ -128,7 +129,7 @@ export default function VISITOR_VISA_Page() {
         <div className="reveal reveal-delay-1">
 
             <img
-                src="images/visitorvisa-hero.webp"
+                src={getAssetPath("/images/visitorvisa-hero.webp")}
                 alt="Family and friends planning an international visit"
                 style={{
                     "width": "100%",

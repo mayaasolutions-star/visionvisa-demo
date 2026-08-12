@@ -1,32 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import { getAssetPath } from '@/lib/asset-path';
+import React from 'react';
 import Link from 'next/link';
 
 export default function Footer() {
-  const [isGitHubPages, setIsGitHubPages] = useState(false);
-
-  /*
-   * Temporary GitHub Pages demo support.
-   * Automatically detects the GitHub Pages domain.
-   *
-   * On Hostinger / visionvisa.in this becomes false,
-   * so the original paths are used automatically.
-   */
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setIsGitHubPages(window.location.hostname.endsWith('github.io'));
-    }
-  }, []);
-
-  const assetPath = (path) => {
-    if (isGitHubPages) {
-      return `/visionvisa-demo${path}`;
-    }
-
-    return path;
-  };
-
   return (
     <footer className="footer">
       <div className="container">
@@ -36,13 +14,13 @@ export default function Footer() {
           <div>
             <Link href="/" className="logo-brand mb-16">
               <img
-                src={assetPath('/images/vision-visa-logo-symbol.webp')}
+                src={getAssetPath('/images/vision-visa-logo-symbol.webp')}
                 alt="Vision Visa Symbol"
                 className="logo-symbol"
               />
 
               <img
-                src={assetPath('/images/visionvisa-name-dark.webp')}
+                src={getAssetPath('/images/visionvisa-name-dark.webp')}
                 alt="Vision Visa"
                 className="logo-name"
               />

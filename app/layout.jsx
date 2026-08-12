@@ -1,7 +1,10 @@
+import { getAssetPath } from '@/lib/asset-path';
 import Script from 'next/script';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ClientInit from '../components/ClientInit';
+
+const baseIconPath = getAssetPath('/images/vision-visa-logo-symbol.webp');
 
 export const metadata = {
   title: 'Vision Visa | Trusted Visa Consultants for International Travel',
@@ -12,7 +15,7 @@ export const metadata = {
     canonical: 'https://www.visionvisa.in/',
   },
   icons: {
-    icon: '/images/vision-visa-logo-symbol.webp',
+    icon: baseIconPath,
   },
 };
 
@@ -22,59 +25,23 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="/css/reset.css" />
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/components.css" />
-        <link rel="stylesheet" href="/css/animations.css" />
-        <link rel="stylesheet" href="/css/editorial-hero.css" />
+        <link rel="stylesheet" href={getAssetPath('/css/reset.css')} />
+        <link rel="stylesheet" href={getAssetPath('/css/main.css')} />
+        <link rel="stylesheet" href={getAssetPath('/css/components.css')} />
+        <link rel="stylesheet" href={getAssetPath('/css/animations.css')} />
+        <link rel="stylesheet" href={getAssetPath('/css/editorial-hero.css')} />
         <Script src="https://unpkg.com/lucide@latest" strategy="beforeInteractive" />
-        <Script src="/js/countries-data.js" strategy="beforeInteractive" />
+        <Script src={getAssetPath('/js/countries-data.js')} strategy="beforeInteractive" />
       </head>
       <body suppressHydrationWarning>
-        <script
-  dangerouslySetInnerHTML={{
-    __html: `
-      (function () {
-        const base = '/visionvisa-demo';
-
-        function fixLinks() {
-          document.querySelectorAll('a[href], img[src]').forEach(function (el) {
-            const attr = el.hasAttribute('href') ? 'href' : 'src';
-            const value = el.getAttribute(attr);
-
-            if (
-              value &&
-              value.startsWith('/') &&
-              !value.startsWith('//') &&
-              !value.startsWith(base + '/')
-            ) {
-              el.setAttribute(attr, base + value);
-            }
-          });
-        }
-
-        fixLinks();
-
-        document.addEventListener('click', function () {
-          setTimeout(fixLinks, 0);
-        });
-
-        new MutationObserver(fixLinks).observe(document.body, {
-          childList: true,
-          subtree: true
-        });
-      })();
-    `,
-  }}
-/>
         <Navbar />
         {children}
         <Footer />
         <ClientInit />
 
-        <Script src="/js/search-engine.js" strategy="afterInteractive" />
-        <Script src="/js/main.js" strategy="afterInteractive" />
-        <Script src="/js/country-render.js" strategy="afterInteractive" />
+        <Script src={getAssetPath('/js/search-engine.js')} strategy="afterInteractive" />
+        <Script src={getAssetPath('/js/main.js')} strategy="afterInteractive" />
+        <Script src={getAssetPath('/js/country-render.js')} strategy="afterInteractive" />
       </body>
     </html>
   );

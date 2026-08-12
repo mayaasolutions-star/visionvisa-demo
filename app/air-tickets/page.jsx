@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 import HeroSection from '../../components/HeroSection';
@@ -376,7 +377,7 @@ export default function AIR_TICKETS_Page() {
 
             <div className="reveal reveal-delay-1">
                 <img
-                    src="images/airtickets-bookingassistance.webp"
+                    src={getAssetPath("/images/airtickets-bookingassistance.webp")}
                     alt="Air ticket booking assistance for domestic and international flights"
                     style={{
                         "width": "100%",

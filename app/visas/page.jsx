@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import Link from 'next/link';
 import HeroSection from '../../components/HeroSection';
@@ -92,7 +93,7 @@ export default function SERVICES_Page() {
             <div className="visas-hero-grid">
                 {/* IMAGE LEFT */}
                 <div className="visas-hero-frame reveal">
-                    <img src="/images/visas-choosewithconfidence.webp" alt="Visa Assistance & Application Guidance" className="hero-frame-img" />
+                    <img src={getAssetPath("/images/visas-choosewithconfidence.webp")} alt="Visa Assistance & Application Guidance" className="hero-frame-img" />
                     <div className="editorial-image-overlay"></div>
 
                     {/* Integrated Subtle Visa Journey Route Animation */}
@@ -428,7 +429,7 @@ export default function SERVICES_Page() {
             <div className="reveal reveal-delay-1">
 
                 <img
-                    src="images/visas-beforeyouapply.webp"
+                    src={getAssetPath("/images/visas-beforeyouapply.webp")}
                     alt="Visa application documents and travel planning"
                     style={{
                         "width": "100%",
@@ -460,7 +461,7 @@ export default function SERVICES_Page() {
             <div className="reveal">
 
                 <img
-                    src="images/visas-visaapplication.webp"
+                    src={getAssetPath("/images/visas-visaapplication.webp")}
                     alt="Visa application and travel documents"
                     style={{
                         "width": "100%",
@@ -802,7 +803,7 @@ export default function SERVICES_Page() {
             <div className="reveal reveal-delay-1">
 
                 <img
-                    src="images/visas-choosewithconfidence.webp"
+                    src={getAssetPath("/images/visas-choosewithconfidence.webp")}
                     alt="International travel and visa planning"
                     style={{
                         "width": "100%",
