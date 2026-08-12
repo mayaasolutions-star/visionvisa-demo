@@ -178,12 +178,12 @@ export default function FOREX_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Currency Exchange
-                </a>
+                </Link>
             </div>
 
 
@@ -310,12 +310,12 @@ export default function FOREX_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Forex Card
-                </a>
+                </Link>
 
             </div>
 
@@ -414,12 +414,12 @@ export default function FOREX_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Remittance
-                </a>
+                </Link>
             </div>
 
 
@@ -548,12 +548,12 @@ export default function FOREX_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Student Forex
-                </a>
+                </Link>
 
             </div>
 
@@ -648,12 +648,12 @@ export default function FOREX_Page() {
                 "textAlign": "center"
             }}
         >
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Enquire About Forex
-            </a>
+            </Link>
         </div>
 
     </div>

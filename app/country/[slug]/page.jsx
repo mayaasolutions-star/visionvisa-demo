@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 import fs from 'fs';
@@ -90,8 +91,8 @@ export default async function CountrySlugPage({ params }) {
               Apply for your {data.name} visa with expert document verification, hassle-free processing, and dedicated embassy support.
             </p>
             <div className="hero-actions">
-              <a id="heroApplyBtn" href={`/contact?country=${data.slug}`} className="btn btn-primary">Apply Now</a>
-              <a href="/contact" className="btn btn-secondary">Talk to Visa Specialist</a>
+              <Link id="heroApplyBtn" href={`/contact?country=${data.slug}`} className="btn btn-primary">Apply Now</Link>
+              <Link href="/contact" className="btn btn-secondary">Talk to Visa Specialist</Link>
             </div>
           </div>
         </div>
@@ -321,8 +322,8 @@ export default async function CountrySlugPage({ params }) {
             <h2 id="ctaTitle">Apply for Your {data.name} Visa Today</h2>
             <p>Let Vision Visa experts handle your application from document review to approval.</p>
             <div className="cta-action-btns">
-              <a id="ctaApplyBtn" href={`/contact?country=${data.slug}`} className="btn btn-primary">Start Visa Application</a>
-              <a href="/contact" className="btn btn-secondary">Talk to Visa Specialist</a>
+              <Link id="ctaApplyBtn" href={`/contact?country=${data.slug}`} className="btn btn-primary">Start Visa Application</Link>
+              <Link href="/contact" className="btn btn-secondary">Talk to Visa Specialist</Link>
             </div>
           </div>
         </div>

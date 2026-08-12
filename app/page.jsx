@@ -139,13 +139,13 @@ export default function HomePage() {
                         "marginBottom": "8px"
                     }}
                 >
-                    <a href="/contact" className="btn btn-primary">
+                    <Link href="/contact" className="btn btn-primary">
                         Apply Now
-                    </a>
+                    </Link>
 
-                    <a href="/contact" className="btn btn-secondary">
+                    <Link href="/contact" className="btn btn-secondary">
                         Talk to Our Team
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -1110,7 +1110,7 @@ export default function HomePage() {
 
         <div className="category-grid reveal">
 
-            <a
+            <Link
                 href="/visas"
                 className="category-card"
             >
@@ -1133,10 +1133,10 @@ export default function HomePage() {
 
                     <i data-lucide="arrow-right"></i>
                 </div>
-            </a>
+            </Link>
 
 
-            <a
+            <Link
                 href="/travel-insurance"
                 className="category-card"
             >
@@ -1159,10 +1159,10 @@ export default function HomePage() {
 
                     <i data-lucide="arrow-right"></i>
                 </div>
-            </a>
+            </Link>
 
 
-            <a
+            <Link
                 href="/forex"
                 className="category-card"
             >
@@ -1185,10 +1185,10 @@ export default function HomePage() {
 
                     <i data-lucide="arrow-right"></i>
                 </div>
-            </a>
+            </Link>
 
 
-            <a
+            <Link
                 href="/air-tickets"
                 className="category-card"
             >
@@ -1211,7 +1211,7 @@ export default function HomePage() {
 
                     <i data-lucide="arrow-right"></i>
                 </div>
-            </a>
+            </Link>
 
         </div>
 
@@ -1240,19 +1240,19 @@ export default function HomePage() {
 
             <div className="cta-buttons">
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary"
                 >
                     Apply Now
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

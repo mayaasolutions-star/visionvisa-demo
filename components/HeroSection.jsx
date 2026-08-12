@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getAssetPath } from '@/lib/asset-path';
 import React from 'react';
 
@@ -46,14 +47,14 @@ export default function HeroSection({
 
             <div className="editorial-actions">
               {ctaLink && ctaText && (
-                <a href={ctaLink} className="btn btn-primary magnetic">
+                <Link href={ctaLink} className="btn btn-primary magnetic">
                   {ctaText}
-                </a>
+                </Link>
               )}
               {secondaryCtaLink && secondaryCtaText && (
-                <a href={secondaryCtaLink} className="btn btn-secondary magnetic">
+                <Link href={secondaryCtaLink} className="btn btn-secondary magnetic">
                   {secondaryCtaText}
-                </a>
+                </Link>
               )}
             </div>
           </div>

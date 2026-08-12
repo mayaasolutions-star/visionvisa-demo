@@ -224,7 +224,7 @@ export default function VISITOR_VISA_Page() {
                         requirements and next steps.
                     </p>
 
-                    <a
+                    <Link
                         href="/contact"
                         className="btn btn-primary"
                         style={{
@@ -234,7 +234,7 @@ export default function VISITOR_VISA_Page() {
                         }}
                     >
                         Get Visitor Visa Assistance
-                    </a>
+                    </Link>
 
                 </div>
 
@@ -506,12 +506,12 @@ export default function VISITOR_VISA_Page() {
                 relevant embassy, consulate or immigration authority.
             </p>
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Check Your Visitor Visa Requirements
-            </a>
+            </Link>
 
         </div>
 
@@ -709,12 +709,12 @@ export default function VISITOR_VISA_Page() {
                     and travel dates.
                 </p>
 
-                <a
+                <Link
                     href="/air-tickets"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Air Tickets
-                </a>
+                </Link>
 
             </div>
 
@@ -735,12 +735,12 @@ export default function VISITOR_VISA_Page() {
                     your journey.
                 </p>
 
-                <a
+                <Link
                     href="/travel-insurance"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Travel Insurance
-                </a>
+                </Link>
 
             </div>
 
@@ -761,12 +761,12 @@ export default function VISITOR_VISA_Page() {
                     for your international trip.
                 </p>
 
-                <a
+                <Link
                     href="/forex"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Forex Services
-                </a>
+                </Link>
 
             </div>
 
@@ -962,12 +962,12 @@ export default function VISITOR_VISA_Page() {
             }}
         >
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Get Visitor Visa Assistance
-            </a>
+            </Link>
 
         </div>
 
@@ -1010,19 +1010,19 @@ export default function VISITOR_VISA_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Get Visitor Visa Assistance
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

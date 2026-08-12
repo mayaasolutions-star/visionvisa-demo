@@ -141,9 +141,9 @@ export default function SERVICES_Page() {
                     </p>
 
                     <div>
-                        <a href="/contact" className="btn btn-primary magnetic">
+                        <Link href="/contact" className="btn btn-primary magnetic">
                             Enquire About Your Visa
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -672,12 +672,12 @@ export default function SERVICES_Page() {
             }}
         >
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Get Visa Assistance
-            </a>
+            </Link>
 
         </div>
 
@@ -790,12 +790,12 @@ export default function SERVICES_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Talk to Vision Visa
-                </a>
+                </Link>
 
             </div>
 
@@ -854,19 +854,19 @@ export default function SERVICES_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Start Your Application
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

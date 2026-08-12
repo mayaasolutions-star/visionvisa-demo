@@ -225,7 +225,7 @@ export default function FAMILY_VISA_Page() {
                         for your visa application.
                     </p>
 
-                    <a
+                    <Link
                         href="/contact"
                         className="btn btn-primary"
                         style={{
@@ -235,7 +235,7 @@ export default function FAMILY_VISA_Page() {
                         }}
                     >
                         Get Family Visa Assistance
-                    </a>
+                    </Link>
 
                 </div>
 
@@ -651,12 +651,12 @@ export default function FAMILY_VISA_Page() {
                 relevant embassy, consulate or immigration authority.
             </p>
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Check Your Family Visa Requirements
-            </a>
+            </Link>
 
         </div>
 
@@ -857,12 +857,12 @@ export default function FAMILY_VISA_Page() {
                     your travel dates.
                 </p>
 
-                <a
+                <Link
                     href="/air-tickets"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Air Tickets
-                </a>
+                </Link>
 
             </div>
 
@@ -883,12 +883,12 @@ export default function FAMILY_VISA_Page() {
                     your journey.
                 </p>
 
-                <a
+                <Link
                     href="/travel-insurance"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Travel Insurance
-                </a>
+                </Link>
 
             </div>
 
@@ -909,12 +909,12 @@ export default function FAMILY_VISA_Page() {
                     for your international journey.
                 </p>
 
-                <a
+                <Link
                     href="/forex"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Forex Services
-                </a>
+                </Link>
 
             </div>
 
@@ -1111,12 +1111,12 @@ export default function FAMILY_VISA_Page() {
             }}
         >
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Get Family Visa Assistance
-            </a>
+            </Link>
 
         </div>
 
@@ -1158,19 +1158,19 @@ export default function FAMILY_VISA_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Get Family Visa Assistance
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

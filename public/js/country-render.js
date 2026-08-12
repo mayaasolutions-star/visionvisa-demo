@@ -124,7 +124,7 @@
         if (metaEntry) metaEntry.textContent = data.entryType;
 
         const heroApplyBtn = document.getElementById('heroApplyBtn');
-        if (heroApplyBtn) heroApplyBtn.href = `/contact?country=${data.slug}`;
+        if (heroApplyBtn) heroApplyBtn.href = `${(window.VISION_VISA_BASE_PATH || '')}/contact?country=${data.slug}`;
 
         // 3. VISA OVERVIEW
         const overviewLabel = document.getElementById('overviewLabel');
@@ -281,7 +281,7 @@
         if (ctaTitle) ctaTitle.textContent = `Ready to Apply for Your ${data.name} Visa?`;
 
         const ctaApplyBtn = document.getElementById('ctaApplyBtn');
-        if (ctaApplyBtn) ctaApplyBtn.href = `/contact?country=${data.slug}`;
+        if (ctaApplyBtn) ctaApplyBtn.href = `${(window.VISION_VISA_BASE_PATH || '')}/contact?country=${data.slug}`;
 
         // Re-initialize Lucide Icons & Scroll Animations
         if (typeof lucide !== 'undefined') {

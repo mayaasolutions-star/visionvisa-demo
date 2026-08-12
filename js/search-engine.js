@@ -288,7 +288,7 @@
             }
 
             if (targetSlug) {
-                window.location.href = `/country/${targetSlug}`;
+                window.location.href = `${(window.VISION_VISA_BASE_PATH || '')}/country/${targetSlug}`;
             } else {
                 if (errorMsg) {
                     const msgSpan = errorMsg.querySelector('span');

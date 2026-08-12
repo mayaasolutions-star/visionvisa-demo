@@ -223,7 +223,7 @@ export default function STUDY_VISA_Page() {
                         what you need to prepare.
                     </p>
 
-                    <a
+                    <Link
                         href="/contact"
                         className="btn btn-primary"
                         style={{
@@ -233,7 +233,7 @@ export default function STUDY_VISA_Page() {
                         }}
                     >
                         Get Study Visa Assistance
-                    </a>
+                    </Link>
 
                 </div>
 
@@ -502,12 +502,12 @@ export default function STUDY_VISA_Page() {
                 consulate or immigration authority.
             </p>
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Check Your Study Visa Requirements
-            </a>
+            </Link>
 
         </div>
 
@@ -706,12 +706,12 @@ export default function STUDY_VISA_Page() {
                     before you travel.
                 </p>
 
-                <a
+                <Link
                     href="/travel-insurance"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Travel Insurance
-                </a>
+                </Link>
 
             </div>
 
@@ -732,12 +732,12 @@ export default function STUDY_VISA_Page() {
                     and travel dates.
                 </p>
 
-                <a
+                <Link
                     href="/air-tickets"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Air Tickets
-                </a>
+                </Link>
 
             </div>
 
@@ -758,12 +758,12 @@ export default function STUDY_VISA_Page() {
                     international travel.
                 </p>
 
-                <a
+                <Link
                     href="/forex"
                     className="btn btn-secondary magnetic"
                 >
                     Explore Forex Services
-                </a>
+                </Link>
 
             </div>
 
@@ -942,12 +942,12 @@ export default function STUDY_VISA_Page() {
             }}
         >
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Get Study Visa Assistance
-            </a>
+            </Link>
 
         </div>
 
@@ -989,19 +989,19 @@ export default function STUDY_VISA_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Get Study Visa Assistance
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

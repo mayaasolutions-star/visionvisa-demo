@@ -108,12 +108,12 @@ export default function TRAVEL_INSURANCE_Page() {
                     travel insurance requirements and available options.
                 </p>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Get Travel Insurance
-                </a>
+                </Link>
             </div>
         </div>
     </div>
@@ -866,12 +866,12 @@ export default function TRAVEL_INSURANCE_Page() {
                 "textAlign": "center"
             }}
         >
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Ask About Travel Insurance
-            </a>
+            </Link>
         </div>
 
     </div>

@@ -108,12 +108,12 @@ export default function AIR_TICKETS_Page() {
                     guide you through the booking process.
                 </p>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Flights
-                </a>
+                </Link>
 
             </div>
 
@@ -366,12 +366,12 @@ export default function AIR_TICKETS_Page() {
 
                 </ul>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Flight Booking
-                </a>
+                </Link>
             </div>
 
 
@@ -644,19 +644,19 @@ export default function AIR_TICKETS_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Enquire About Flights
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 

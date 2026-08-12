@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import styles from './HeroSection.module.css';
@@ -19,9 +20,9 @@ export default function HeroSection({ title, subtitle, backgroundImage, ctaText,
           <h1 className="display-text mb-24">{title}</h1>
           {subtitle && <p className="body-large mb-48">{subtitle}</p>}
           {ctaLink && ctaText && (
-            <a href={ctaLink} className="btn btn-primary magnetic">
+            <Link href={ctaLink} className="btn btn-primary magnetic">
               {ctaText}
-            </a>
+            </Link>
           )}
         </div>
       </div>

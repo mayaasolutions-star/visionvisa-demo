@@ -221,7 +221,7 @@ export default function WORK_VISA_Page() {
                         work visa requirements and next steps.
                     </p>
 
-                    <a
+                    <Link
                         href="/contact"
                         className="btn btn-primary"
                         style={{
@@ -231,7 +231,7 @@ export default function WORK_VISA_Page() {
                         }}
                     >
                         Discuss Your Work Visa
-                    </a>
+                    </Link>
 
                 </div>
 
@@ -502,12 +502,12 @@ export default function WORK_VISA_Page() {
                 relevant embassy, consulate or immigration authority.
             </p>
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Check Your Work Visa Requirements
-            </a>
+            </Link>
 
         </div>
 
@@ -848,12 +848,12 @@ export default function WORK_VISA_Page() {
             }}
         >
 
-            <a
+            <Link
                 href="/contact"
                 className="btn btn-primary magnetic"
             >
                 Get Work Visa Assistance
-            </a>
+            </Link>
 
         </div>
 
@@ -895,19 +895,19 @@ export default function WORK_VISA_Page() {
                 }}
             >
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-primary magnetic"
                 >
                     Get Work Visa Assistance
-                </a>
+                </Link>
 
-                <a
+                <Link
                     href="/contact"
                     className="btn btn-secondary magnetic"
                 >
                     Talk to Our Team
-                </a>
+                </Link>
 
             </div>
 
